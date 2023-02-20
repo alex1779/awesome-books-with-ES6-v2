@@ -1,5 +1,5 @@
 export const displaySection = (sectionToDisp) => {
-// Get all the section
+  // Get all the section
   const sections = document.querySelectorAll('section');
   const pageTitle = document.querySelector('#page-title');
   // Menu Links

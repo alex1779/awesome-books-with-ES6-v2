@@ -1,6 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-/* eslint-disable max-classes-per-file */
 import { addMenuLinks } from './menu.js';
 import { displayTime } from './time.js';
 import { removeBookFromDOM, addRemoveButtons } from './remove.js';
@@ -29,7 +26,7 @@ class Library {
         this.books = data;
       }
     } catch (error) {
-      saveToLocalStorage();
+      this.saveToLocalStorage();
     }
   }
 
@@ -102,9 +99,4 @@ removeBookFromDOM(listBooks, -1);
 
 displayTime();
 addRemoveButtons(listBooks);
-// MENUS
-const listMenuLink = document.querySelector('#m-list');
-const addMenuLink = document.querySelector('#m-add');
-const contactMenuLink = document.querySelector('#m-contact');
-
 addMenuLinks();
