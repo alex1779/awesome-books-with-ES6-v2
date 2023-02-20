@@ -1,13 +1,7 @@
 import { addMenuLinks } from './menu.js';
 import { displayTime } from './time.js';
 import { removeBookFromDOM, addRemoveButtons } from './remove.js';
-
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
+import Book from './booking.js';
 
 class Library {
   constructor() {
